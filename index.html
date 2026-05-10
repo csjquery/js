@@ -1,0 +1,232 @@
+
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>jQuery Mobile</title>
+
+	<meta name="author" content="OpenJS Foundation - openjsf.org">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="https://jquerymobile.com/wp-content/themes/jquerymobile.com/i/favicon.ico">
+	<link rel="stylesheet" href="https://jquerymobile.com/wp-content/themes/jquery/lib/typesense-minibar/typesense-minibar.css?v=c5fa9b9a">
+	<link rel="stylesheet" href="https://jquerymobile.com/wp-content/themes/jquery/css/base.css?v=4a1b65ae">
+	<link rel="stylesheet" href="https://jquerymobile.com/wp-content/themes/jquerymobile.com/style.css?v=be18488e">
+
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+	<script src="https://jquerymobile.com/wp-content/themes/jquery/js/main.js?v=10baaffd"></script>
+	<script defer type="module" src="https://jquerymobile.com/wp-content/themes/jquery/lib/typesense-minibar/typesense-minibar.js?v=830f1ee1"></script>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://jquerymobile.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjquerymobile.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://jquerymobile.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjquerymobile.com%2F&#038;format=xml" />
+<link rel="https://api.w.org/" href="https://jquerymobile.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://jquerymobile.com/wp-json/wp/v2/pages/18" /><meta name="generator" content="WordPress 6.9.4" />
+<link rel="canonical" href="https://jquerymobile.com/" />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+</head>
+<body class="jquery-mobile home wp-singular page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-18 wp-theme-jquery wp-child-theme-jquerymobilecom page-slug-index single-author singular">
+
+	<div id="banner">
+		jQuery Mobile is no longer supported. Please see the <a href="https://blog.jquerymobile.com/2021/10/07/jquery-maintainers-continue-modernization-initiative-with-deprecation-of-jquery-mobile/">announcement blog post</a> for more information.	</div>
+
+<header>
+	<section id="global-nav">
+		<nav>
+			<div class="constrain">
+				<ul class="projects">
+					<li class="project jquery"><a href="https://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="https://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="https://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="https://qunitjs.com/" title="QUnit">QUnit</a></li>
+				</ul>
+				<ul class="links">
+					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
+					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
+						<ul>
+							<li><a href="https://cla.openjsf.org/">CLA</a></li>
+							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
+							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
+							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
+							<li><a href="https://contribute.jquery.org/documentation/">Documentation</a></li>
+							<li><a href="https://contribute.jquery.org/web-sites/">Web Sites</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://events.jquery.org/">Events</a>
+						<ul class="wide">
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://jquery.com/support/">Support</a>
+						<ul>
+							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="https://jquery.com/support/">Chat</a></li>
+							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://contribute.jquery.org/bug-reports/">Report a bug</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://openjsf.org/">OpenJS Foundation</a>
+						<ul>
+							<li><a href="https://openjsf.org/join">Join</a></li>
+							<li><a href="https://openjsf.org/members">Members</a></li>
+							<li><a href="https://jquery.com/team">jQuery Team</a></li>
+							<li><a href="https://openjsf.org/governance">Governance</a></li>
+							<li><a href="https://code-of-conduct.openjsf.org/">Conduct</a></li>
+							<li><a href="https://openjsf.org/projects">Projects</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+<div id="container">
+	<div id="logo-events" class="constrain clearfix">
+		<h2 class="logo"><a href="/" title="jQuery Mobile">jQuery Mobile</a></h2>
+
+		<aside id="broadcast"></aside>
+	</div>
+
+	<nav id="main" class="constrain clearfix">
+		<div class="menu-top-container">
+	<button hidden id="menu-trigger" class="button menu-trigger" aria-expanded="false" aria-haspopup="menu">Navigation</button>
+	<ul id="menu-top" class="menu" role="menu" aria-labelledby="menu-trigger">
+<li class="menu-item"><a href="https://jquerymobile.com/demos/">Demos</a></li>
+<li class="menu-item"><a href="https://jquerymobile.com/download/">Download</a></li>
+<li class="menu-item"><a href="https://api.jquerymobile.com/">API Documentation</a></li>
+<li class="menu-item"><a href="https://themeroller.jquerymobile.com">Themes</a></li>
+<li class="menu-item"><a href="https://jquerymobile.com/resources/">Resources</a></li>
+<li class="menu-item"><a href="https://blog.jquerymobile.com/">Blog</a></li>
+<li class="menu-item"><a href="https://jquerymobile.com/about/">About</a></li>
+	</ul>
+</div>
+
+		<typesense-minibar	data-origin="https://typesense.jquery.com"
+	data-collection="jquerymobile_com"
+	data-key="Zh8mMgohXECel9wjPwqT7lekLSG3OCgz"
+	data-foot="true" data-group="true"
+>
+	<form role="search" class="searchform" action="https://jquerymobile.com/" method="get">
+	<input type="search" name="s" aria-label="Search jQuery Mobile" value="" placeholder="Search" autocomplete="off">
+	<button type="submit" class="visuallyhidden"></button>
+</form>
+</typesense-minibar>
+	</nav>
+
+	<div id="content-wrapper" class="clearfix row">
+
+
+<div class="content-full full-width twelve columns">
+	<div id="content">
+		
+		
+<div id="banner-secondary" class="clearfix">
+  <div class="banner-jquery-mobile-no-support">
+    <h2>jQuery Mobile is no longer supported</h2>
+    <p>To read more about the status of the jQuery Mobile project, see the <a href="https://blog.jquerymobile.com/2021/10/07/jquery-maintainers-continue-modernization-initiative-with-deprecation-of-jquery-mobile/">announcement blog post</a>.</p>
+  </div>
+  <div id="description">
+    <h1>A Touch-Optimized Web Framework</h1>
+
+    <p class="intro">jQuery Mobile is a HTML5-based user interface system designed to make responsive web sites and apps that are accessible on all smartphone, tablet and desktop devices.</p>
+  </div>
+  <div class="download-box">
+    <h2>Download jQuery Mobile</h2>
+    <div class="download-option">
+        <a href="https://jquerymobile.com/download-builder/" class="button">Custom download</a>
+    </div>
+    <div class="download-option">
+        <a href="https://jquerymobile.com/resources/download/jquery.mobile-1.4.5.zip" class="button">Latest stable</a>
+        <span>Version 1.4.5</span>
+        <span>jQuery 1.8 - 1.11 / 2.1</span>
+    </div>
+  </div>
+</div>
+
+<div id="home-content" class="clearfix row">
+  <aside class="dev-links columns four">
+    <h3>Developer Links</h3>
+    <ul>
+      <li><a href="https://github.com/jquery/jquery-mobile">Source Code (GitHub)</a></li>
+      <li>jQuery Mobile Git (WIP Build)
+        <ul>
+          <li><a href="https://releases.jquery.com/git/mobile/git/jquery.mobile-git.js">JavaScript</a></li>
+          <li><a href="https://releases.jquery.com/git/mobile/git/jquery.mobile-git.css">CSS</a></li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/jquery/jquery-mobile/blob/master/CONTRIBUTING.md#issues">Report an issue</a></li>
+      <li><a href="/browser-support/">Browser Support</a></li>
+      <li><a href="/changelog/">Changelogs</a></li>
+      <li><a href="/upgrade-guide/">Upgrade Guides</a></li>
+      <li><a href="roadmap/">Roadmap</a></li>
+      <li>Discussion Forum
+        <ul>
+          <li><a href="https://forum.jquery.com/jquery-mobile/">jQuery Mobile</a></li>
+          <li><a href="https://forum.jquery.com/developing-jquery-mobile/">Developing jQuery Mobile</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <article id="project-strategy" class="eight columns">
+    <h2 class="block">Seriously cross-platform with HTML5</h2>
+
+    <img decoding="async" src="/resources/devices.png" id="jqm-devices" alt="devices">
+
+    <p class="seriously-cross-platform">jQuery Mobile framework takes the "write less, do more" mantra to the next level: Instead of writing unique applications for each mobile device or OS, the jQuery mobile framework allows you to design a single highly-branded responsive web site or application that will work on all popular smartphone, tablet, and desktop platforms.</p>
+
+    <p><a href="/browser-support/">Browser Support</a></p>
+  </article>
+
+  <article id="themeroller" class="eight columns">
+    <h2 class="block">Theming: Built to be branded</h2>
+
+    <a href="https://themeroller.jquerymobile.com" id="themeroller-logo"><img decoding="async" src="/resources/themeroller-mobile-logo.png" alt="ThemeRoller"></a>
+
+    <p>We believe that your web site or app should feel like your brand, not any particular OS. To make building highly customized themes easy, we've created <a href="https://themeroller.jquerymobile.com">ThemeRoller for Mobile</a> to make it easy to drag and drop colors and download a custom theme.  For polished visuals without the bloat, we leverage CSS3 properties like <code>text-shadow</code> and <code>box-shadow</code>.</p>
+  </article>
+
+  <article id="download" class="eight columns">
+    <h2 class="block">Download builder: Customize for speed</h2>
+
+    <p>We recommend using our tool to build a custom bundle that contains only the components you need. The builder generates a custom JavaScript file, as well as full and structure-only stylesheets for production use.</p>
+
+    <p><a href="https://jquerymobile.com/download-builder/">Download Builder</a></p>
+  </article>
+</div>	</div>
+</div>
+
+	</div>
+</div>
+
+<footer class="clearfix simple">
+	<div class="constrain">
+		
+<div id="legal" class="legal">
+	<ul class="footer-site-links">
+			<li><a class="icon-pencil" href="https://learn.jquery.com/">Learning Center</a></li>
+			<li><a class="icon-comments" href="https://jquery.com/support/">Chat</a></li>
+			<li><a class="icon-twitter" href="https://twitter.com/jquerymobile">Twitter</a></li>
+			<li><a class="icon-github" href="https://github.com/jquery">GitHub</a></li>
+	</ul>
+	<p class="copyright">
+		Copyright 2026 <a href="https://openjsf.org/">OpenJS Foundation</a> and jQuery contributors. All rights reserved. See <a href="https://jquery.com/license/">jQuery License</a> for more information. The <a href="https://openjsf.org/">OpenJS Foundation</a> has registered trademarks and uses trademarks. For a list of trademarks of the <a href="https://openjsf.org/">OpenJS Foundation</a>, please see our <a href="https://trademark-policy.openjsf.org/">Trademark Policy</a> and <a href="https://trademark-list.openjsf.org/">Trademark List</a>. Trademarks and logos not indicated on the <a href="https://trademark-list.openjsf.org/">list of OpenJS Foundation trademarks</a> are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them. OpenJS Foundation <a href="https://terms-of-use.openjsf.org/">Terms of Use</a>, <a href="https://privacy-policy.openjsf.org/">Privacy</a>, <a href="https://code-of-conduct.openjsf.org/">Code of Conduct</a>, and <a href="https://www.linuxfoundation.org/cookies">Cookie</a> Policies also apply.
+	</p>
+	<p><a href="https://www.digitalocean.com" class="do-link">Web hosting by Digital Ocean</a> | <a href="https://www.fastly.com/">CDN by Fastly</a> | <a href="https://wordpress.org/" class="wp-link">Powered by WordPress</a></p>
+</div>
+
+	</div>
+</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/jquerymobile.com/*","/wp-content/themes/jquery/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+</body>
+</html>
